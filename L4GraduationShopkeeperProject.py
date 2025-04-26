@@ -1,9 +1,11 @@
 #testing GitHub commits
-
+import random
 class Shopkeeper:
     def __init__(self, inventory):
         self.inventory = inventory
 
+shops = ["generalStore", "petStore", "thriftStore", "farmFreshStore", "tastiesMarket", "streetMarket", "pottedPlantMarket"]
+open_shops = random.sample(shops, random.randint(3, 6)
 generalStoreInventory = {"Sugar": 5, "Salt": 3, "Pepper": 6, "Wheat": 2}
 
 generalStoreShopkeeper = Shopkeeper(generalStoreInventory)
@@ -34,6 +36,7 @@ def generalStore():
         print("Thank you for your purchase of " + str(amount) + " bundles of wheat. That will be $" + str(amount * 7) + ". Have a nice day!")
 
 def main():
+    shoppingLocation = input("Hello and welcome to Shopkeeper Simulator! \n In this game, you go to shops to buy items. \n The shops currently open are " + open_shops + ".\n Which would you like to go to?
     generalStore()
 
 
